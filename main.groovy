@@ -1,7 +1,7 @@
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
-File f = new File('$WORKSPACE/template.json')
+File f = new File('/var/jenkins_home/workspace/test_groovy/template.json')
 def slurped = new JsonSlurper().parseText(f.text)
 def builder = new JsonBuilder(slurped)
 

@@ -1,3 +1,4 @@
+#!/usr/bin/groovy
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 

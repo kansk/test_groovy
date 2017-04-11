@@ -1,7 +1,7 @@
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
-Class Data {
+class Data {
 
 def method () {
 def fileName = "packer.json"

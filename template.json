@@ -11,8 +11,8 @@
   "floating_ip_pool": "public",
   "ssh_username": "ubuntu",
   "image_name": "ubuntu_1",
-  "networks": ["<<network>>"],
-  "source_image": "<<Source Image ID>>",
+  "networks": ["2c6d5efb-5617-4cd9-b1a6-c7a5313378f6"],
+  "source_image": "0af35f58-894b-4af2-b448-121d9368c226",
   "flavor": "m1.small",
   "insecure": "true"
   }] ,

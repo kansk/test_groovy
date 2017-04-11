@@ -1,24 +1,25 @@
 {
-"builders":[
+"builders": [
   {
   "type": "openstack",
-  "identity_endpoint": "http://controller/v2",
+  "identity_endpoint": "http://172.19.74.169:5000/v3",
   "tenant_name": "admin",
+  "domain_name": "Default",
   "username": "admin",
-  "password": "abc123",
+  "password": "password",
   "region": "RegionOne",
   "use_floating_ip": true,
-  "floating_ip_pool": "public",
+  "floating_ip_pool": "external",
   "ssh_username": "ubuntu",
-  "image_name": "ubuntu_1",
-  "networks": ["2c6d5efb-5617-4cd9-b1a6-c7a5313378f6"],
-  "source_image": "0af35f58-894b-4af2-b448-121d9368c226",
+  "image_name": "packer-ubuntu",
+  "networks": ["f60c08bd-3f40-41ae-b5f7-256ac9c7b8ac"],
+  "source_image": "6d153be4-c261-4380-90e2-858f7da2c560",
   "flavor": "m1.small",
   "insecure": "true"
-  }] ,
+  }
+  ],
   "provisioners": [{
     "type": "shell",
     "inline": ["sudo ls"]
-  }
-]
+  }]
 }

@@ -1,6 +1,8 @@
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 
+Class data {
+
 def method () {
 def fileName = "packer.json"
 File f = new File('template.json')
@@ -20,5 +22,11 @@ else
  println("The Content Written to the file " + fileName + "is")
  println(builder.toPrettyString())
 }
+}
+ 
+ public static void main (String[] args) {
+  Data dt = new Data();
+  dt.method();
+ }
 }
 return this

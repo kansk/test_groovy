@@ -1,4 +1,4 @@
-class test()
+class Test()
 {
 def method()
 {

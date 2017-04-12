@@ -9,7 +9,7 @@
   "password": "password",
   "region": "RegionOne",
   "use_floating_ip": true,
-  "floating_ip_pool": "external",
+  "floating_ip_pool": "172.19.74.180",
   "ssh_username": "ubuntu",
   "image_name": "packer-ubuntu",
   "networks": ["f60c08bd-3f40-41ae-b5f7-256ac9c7b8ac"],

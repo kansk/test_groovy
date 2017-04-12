@@ -23,14 +23,16 @@ def nexusRepo = "MEC"
 //------------------------------------------------------------
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
+
 def method () {
   def fileName = "/var/jenkins_home/workspace/${env.JOB_NAME}/packer.json"
   def newFile  = "/var/jenkins_home/workspace/${env.JOB_NAME}/template.json"
 File f = new File(newFile)
 def slurped = new JsonSlurper().parseText(f.text)
 def builder = new JsonBuilder(slurped)
-
-builder.content.builders[0].image_name = 'Aricent_Image_1'
+//def ImageName = "${env.APP_NAME}-${env.MS_NAME}-${env.WORK_NAME}-${env.AUTHOR}" /** THIS HAS TO BE ENABLED AFTER REQUIREMENTS FULLFILLED */
+def ImageName = "Aricent-DevOps-TestImage-Praveen"
+builder.content.builders[0].image_name = ImageName
 
 def inputFile = new File(fileName)
 if(inputFile.exists())

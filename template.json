@@ -1,6 +1,6 @@
 {
   "variables": {
-    "build_uuid": null
+    "build_uuid": ""
   },
 "builders": [
   {

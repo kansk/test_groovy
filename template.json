@@ -5,9 +5,7 @@
 "builders": [
   {
   "type": "openstack",
-  "tags": {
-      "BuildUUID": "{{user `build_uuid`}}"
-  },
+  "BuildUUID": "{{user `build_uuid`}}",
   "identity_endpoint": "http://172.19.74.169:5000/v3",
   "tenant_name": "admin",
   "domain_name": "Default",

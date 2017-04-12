@@ -24,8 +24,9 @@ def nexusRepo = "MEC"
 import groovy.json.JsonBuilder
 import groovy.json.JsonSlurper
 def method () {
-def fileName = "/var/jenkins_home/workspace/test_groovy_3/packer.json"
-File f = new File('/var/jenkins_home/workspace/test_groovy_3/template.json')
+  def fileName = "/var/jenkins_home/workspace/${env.JOB_NAME}/packer.json"
+  def newFile  = "/var/jenkins_home/workspace/${env.JOB_NAME}/template.json"
+File f = new File(newFile)
 def slurped = new JsonSlurper().parseText(f.text)
 def builder = new JsonBuilder(slurped)
 
